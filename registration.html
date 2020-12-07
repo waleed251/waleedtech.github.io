@@ -1,0 +1,385 @@
+<!doctype>
+<html>
+<head>
+<title>internel css</title>
+<script>
+function abc()
+{
+name1=document.forms["check"]["fname"].value
+if(name1=="")
+{
+document.getElementById("fn").innerHTML="*required"
+return false;
+}
+
+name2=document.forms["check"]["lname"].value
+if(name2=="")
+{
+alert("please enter your lname");
+return false;
+}
+
+email=document.forms["check"]["umail"].value
+if(email=="")
+{
+alert("please enter your email");
+return false;
+}
+
+password=document.forms["check"]["pass1"].value
+if(password=="")
+{
+alert("please enter your password");
+return false;
+}
+
+password2=document.forms["check"]["pass2"].value
+if(password2=="")
+{
+alert("please enter your confirm password");
+return false;
+}
+
+if(password2!==password)
+{
+alert(" your paasword is not match");
+}
+
+country=document.forms["check"]["con"].value
+if(country=="")
+{
+alert("please select your country");
+return false;
+}
+
+file=document.forms["check"]["file1"].value
+if(file=="")
+{
+alert("please eselect your file");
+return false;
+}
+
+comments=document.forms["check"]["talk"].value
+if(comments=="")
+{
+alert("please say some word about you");
+return false;
+}
+}
+
+</script>
+<style>
+
+body
+{
+margin:0px;
+}
+
+#maindiv
+{
+border:1px solid black;
+width:990px;
+height:1500px;
+background-color:skyblue;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+}
+
+#banner
+{
+border:1px solid black;
+width:990px;
+height:400px;
+position:absolute;
+background-color:red;
+line-height:250px;
+text-align:center;
+/*background: webkit-linear-gradient(red, blue);
+for safari 5.1 to 6 version
+
+background: -o-linear-gradient(green, blue);
+for opera 11.1 to 12 version
+
+background: moz-linear-gradient(pink,brown);
+for mozila firefox 3.6 to 15 version*/
+
+background: linear-gradient(140deg,yellow,blue,pink);
+/*standard syntax*/
+
+box-shadow: 10px 10px 30px red;
+
+}
+
+#menu
+{
+border:1px solid black;
+width:990px;
+height:50px;
+position:absolute;
+background-color:yellow;
+line-height:50px;
+text-align:center;
+margin-top:400px;
+}
+
+
+
+#ul
+{
+list-style-type:none;
+margin:0px;
+padding:0px;
+background-color:red;
+}
+
+#li
+{
+float:left;
+}
+
+#new:link
+{
+display:block;
+width:150px;
+height:50px;
+color:red;
+font-size:20px;
+margin-left:0px;
+line-height:40px;
+text-decoration:none;
+text-align:center;
+background-color:black;
+border-radius:30px 90px 20px 90px;
+background:linear-gradient(120deg, white,blue);
+}
+
+#new:hover
+{
+display:block;
+width:150px;
+height:50px;
+color:green;
+background-color:skyblue;
+background:linear-gradient(120deg, white,red);
+}
+
+#new:active
+{
+display:block;
+width:150px;
+height:50px;
+color:yellow;
+background-color:yellow;
+}
+
+
+
+
+#slider
+{
+border:1px solid black;
+width:990px;
+height:400px;
+position:absolute;
+background-color:purple;
+line-height:400px;
+text-align:center;
+margin-top:450px;
+}
+
+
+#content
+{
+border:1px solid black;
+width:990px;
+height:500px;
+position:absolute;
+background-color:orange;
+line-height:500px;
+text-align:center;
+margin-top:850px;
+}
+
+
+#footer
+{
+border:1px solid black;
+width:990px;
+height:150px;
+color:red;
+color:#aa4070;
+position:absolute;
+background-color:black;
+line-height:150px;
+text-align:center;
+margin-top:1350px;
+}
+
+#signup
+{
+border:1px solid black;
+width:680px;
+height:600px;
+position:absolute;
+background-color:orange;
+line-height:0px;
+text-align:center;
+margin-top:0px;
+}
+
+#signin
+{
+border:1px solid black;
+width:300px;
+height:600px;
+position:absolute;
+background-color:orange;
+line-height:0px;
+text-align:;
+margin-left:685px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="maindiv">
+	<div id="banner"><font size="6">Banner</font>
+	</div>
+<div id="menu">
+
+<div style="margin-left:110px;">
+<ul id="ul">
+<li id="li"><a href="index.html" id="new">Home</a></li>
+<li id="li"><a href="gallery.html" id="new">Gallery</a></li>
+<li id="li"><a href="video.html" id="new">video</a></li>
+<li id="li"><a href="audio.html" id="new">audio</a></li>
+<li id="li"><a href="registration.html" id="new">registration</a></li>
+</ul>
+
+</div>
+
+</div>
+        <div id="slider"><div style="border:0px solid black; width:980px; height:50px; font-size:30px; line-height:50px; color:white;"><marquee scrollamount="15" behavior="scroll" direction="left">We Design Professional Website,Our web pages is under working</marquee></div></div>
+<div id="content">
+
+
+<div id="signup">
+
+
+<h1>Registration Form</h1>
+
+<table width="400"  bgcolor="" align="center">
+<form name="check">
+<tr>
+<td width="150">First Name</td>
+<td><input type="text" size="31"placeholder="first name" name="fname"><span id="fn" style="color:red"></span></td>
+</tr>
+
+<tr>
+<td width="150">Last Name</td>
+<td><input type="text" size="30" name="lname"></td>
+</tr>
+
+<tr>
+<td width="150">E-mail</td>
+<td><input type="email" size="30" name="umail"></td>
+</tr>
+
+<tr>
+<td width="150">Password</td>
+<td><input type="password" size="30" name="pass1"></td>
+</tr>
+
+<tr>
+<td width="150">Confirm Password</td>
+<td><input type="password" size="30" name="pass2"></td>
+</tr>
+
+<tr>
+<td width="150">Gender</td>
+<td>
+<input type="radio" name="gender" value="male" size="30" name="g">Male
+<input type="radio" name="gender" value="female" size="30" name="g">Female
+</td>
+</tr>
+
+
+<tr>
+<td width="150">Hobbies</td>
+<td>
+<input type="checkbox" name="h1" value="ab" size="30" checked="checked" disabled="disabled">football
+<input type="checkbox" name="h2" value="sadm" size="30">cricket
+<input type="checkbox" name="h3" value="fvvesall" size="30">hockey
+</td>
+</tr>
+
+<tr>
+<td width="150">Select Country</td>
+<td>
+<select name="con">
+<option value="pak">Pakistan</option>
+<option value="ind">india</option>
+<option value="aus">Australia</option>
+<option value="usa">U.S.A</option>
+<option value="chn">China</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td width="150">Upload File</td>
+<td><input type="file" name="file1"></td>
+</tr>
+
+<tr>
+<td width="150">Comments</td>
+<td><textarea cols="32" rows="7" name="talk"></textarea></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="right">
+<input type="submit" value="Signup" onclick="return(abc())">
+<input type="Reset" value="Reset">
+</td>
+</tr>
+
+</form>
+</table>
+
+</div>
+
+<div id="signin">
+<h1>Already Members</h1>
+<table width="200" align="center">
+<form>
+<tr>
+<td width="150">E-Mail</td>
+<td><input type="mail" size="20"placeholder="E-Mail"></td>
+</tr>
+
+<tr>
+<td width="150">Password</td>
+<td><input type="password" size="20"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="right">
+<input type="submit" value="Login">
+</td>
+</tr>
+</form>
+</table>
+
+</div>
+
+</div>
+        <div id="footer">footer</div>
+</div>
+
+</body>
+</html>

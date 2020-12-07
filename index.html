@@ -1,0 +1,231 @@
+<!doctype>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+
+<title>internel css</title>
+<style>
+
+body
+{
+margin:0px;
+}
+
+#maindiv
+{
+border:1px solid black;
+width:990px;
+height:1500px;
+background-color:skyblue;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+}
+
+#banner
+{
+border:1px solid black;
+width:990px;
+height:400px;
+position:absolute;
+background-color:red;
+line-height:250px;
+text-align:center;
+background: linear-gradient(150deg,red,blue);
+box-shadow:10px 10px 40px red;
+background:linear-gradient(57deg, #006a7,#1e4d92);
+clip-path:polygon(0% 10%,100% 0%,100% 70%, 0% 100%);
+}
+
+#menutop
+{
+border:1px solid black;
+width:990px;
+height:50px;
+position:absolute;
+background-color:;
+line-height:0px;
+text-align:center;
+margin-top:400px;
+}
+
+ul#menu,ul#menu ul.sub-menu
+{
+padding:0px;
+margin:0px;
+margin-top:0px;
+}
+
+ul#menu li,ul.sub-menu li 
+{
+list-style-type:none;
+float:left;
+}
+
+ul#menu li a,ul.sub-menu li a
+{
+display:block;
+width:150px;
+height:50px;
+color:red;
+font-size:20px;
+margin-left:0px;
+line-height:40px;
+text-decoration:none;
+text-align:center;
+background-color:black;
+border-radius:30px 90px 20px 90px;
+background:linear-gradient(150deg, white,blue);
+}
+
+ul#menu li a:hover,ul.sub-menu li a:hover
+{
+background-color:blue;
+display:block;
+text-decoration:underline;
+color:yellow;
+background:linear-gradient(120deg, white,red);
+}
+
+ul#menu li
+{
+position:raletive;
+}
+
+ul#menu li ul.sub-menu
+{
+display:none;
+position:raletive;
+top:60px;
+left:70px;
+width:100px;
+}
+
+ul#menu li:hover ul.sub-menu
+{
+display:block;
+}
+
+
+a:active
+{
+color:yellow;
+background-color:red;
+}
+
+
+
+#slider
+{
+border:1px solid black;
+width:990px;
+height:400px;
+position:absolute;
+background-color:purple;
+line-height:400px;
+text-align:center;
+margin-top:450px;
+}
+
+
+#content
+{
+border:1px solid black;
+width:990px;
+height:500px;
+position:absolute;
+background-color:orange;
+line-height:500px;
+text-align:center;
+margin-top:850px;
+}
+
+
+#footer
+{
+border:1px solid black;
+width:990px;
+height:150px;
+color:red;
+color:#aa4070;
+position:absolute;
+background-color:black;
+line-height:150px;
+text-align:center;
+margin-top:1350px;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<div id="maindiv">
+	<div id="banner"><!-- Insert to your webpage where you want to display the slider -->
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 56px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="slider/a.jpg" alt="a"  title="a" />
+                </li>
+                <li><img src="slider/b.jpg" alt="b"  title="b" />
+                </li>
+                <li><img src="slider/c.png" alt="c"  title="c" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="slider/a-tn.jpg" alt="a" title="a" /></li>
+                <li><img src="slider/b-tn.jpg" alt="b" title="b" /></li>
+                <li><img src="slider/c-tn.png" alt="c" title="c" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive Image Slider jQuery">Responsive Image Slider jQuery</a></div>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+	</div>
+<div id="menutop" style="z-index:2;">
+
+<div style="margin-left:70px;">
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="gallery.html">Gallery</a>
+<ul class="sub-menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">Home</a></li>
+<li><a href="#">Home</a></li>
+</ul>
+</li>
+<li><a href="video.html">video</a></li>
+<li><a href="audio.html">audio</a>
+<ul class="sub-menu">
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Home</a></li>
+</ul>
+</li>
+<li><a href="registration.html">registration</a></li>
+</ul>
+
+</div>
+
+</div>
+        <div id="slider"><div style="border:0px solid black; width:980px; height:50px; font-size:30px; line-height:50px; color:white;"><marquee scrollamount="15" behavior="scroll" direction="left">We Design Professional Website,Our web pages is under working</marquee></div></div>
+        <div id="content">content</div>
+        <div id="footer">footer</div>
+</div>
+
+</body>
+</html>
